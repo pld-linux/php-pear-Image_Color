@@ -23,12 +23,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Manage and handles color data and conversions.
 
-This class has in PEAR status: %{_status}
+This class has in PEAR status: %{_status}.
 
 %description -l pl
 Zarz±dzanie i obs³uga danych o kolorach i ich konwersji.
 
-Ta klasa ma w PEAR status: %{_status}
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
