@@ -8,13 +8,13 @@ Summary:	%{_pearname} - Manage and handles color data and conversions
 Summary(pl):	%{_pearname} - obs³uga konwersji i zarz±dzania kolorami
 Name:		php-pear-%{_pearname}
 Version:	1.0.1
-Release:	2
+Release:	2.1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	fdf3699039d3e1557ad479a6bc9b84cc
 URL:		http://pear.php.net/package/Image_Color/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-gd
 Requires:	php-pear
 BuildArch:	noarch
@@ -31,17 +31,18 @@ Zarz±dzanie i obs³uga danych o kolorach i ich konwersji.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
-
-install %{_pearname}-%{version}/%{_subclass}.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc install.log
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
