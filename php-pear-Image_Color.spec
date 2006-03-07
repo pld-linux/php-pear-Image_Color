@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	a4a1a6f5c0f72d235930902cc1ee2e94
 URL:		http://pear.php.net/package/Image_Color/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-gd
 Requires:	php-pear
