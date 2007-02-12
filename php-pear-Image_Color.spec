@@ -5,7 +5,7 @@
 
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - Manage and handles color data and conversions
-Summary(pl):	%{_pearname} - obs³uga konwersji i zarz±dzania kolorami
+Summary(pl.UTF-8):   %{_pearname} - obsÅ‚uga konwersji i zarzÄ…dzania kolorami
 Name:		php-pear-%{_pearname}
 Version:	1.0.2
 Release:	2
@@ -27,8 +27,8 @@ Manage and handles color data and conversions.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Zarz±dzanie i obs³uga danych o kolorach i ich konwersji.
+%description -l pl.UTF-8
+ZarzÄ…dzanie i obsÅ‚uga danych o kolorach i ich konwersji.
 
 Ta klasa ma w PEAR status: %{_status}.
 
