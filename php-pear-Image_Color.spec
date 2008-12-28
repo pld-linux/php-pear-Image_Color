@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - Manage and handles color data and conversions
 Summary(pl.UTF-8):	%{_pearname} - obsługa konwersji i zarządzania kolorami
 Name:		php-pear-%{_pearname}
-Version:	1.0.2
-Release:	3
+Version:	1.0.3
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	a4a1a6f5c0f72d235930902cc1ee2e94
+# Source0-md5:	78412abd1d54be0de3c5d9efe53af5a2
 URL:		http://pear.php.net/package/Image_Color/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
