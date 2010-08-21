@@ -2,13 +2,12 @@
 %define		_class		Image
 %define		_subclass	Color
 %define		_status		stable
-
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - Manage and handles color data and conversions
 Summary(pl.UTF-8):	%{_pearname} - obsługa konwersji i zarządzania kolorami
 Name:		php-pear-%{_pearname}
 Version:	1.0.4
-Release:	1
+Release:	2
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -17,7 +16,7 @@ URL:		http://pear.php.net/package/Image_Color/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(gd)
+Requires:	php-gd
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
