@@ -2,7 +2,6 @@
 %define		_subclass	Color
 %define		_status		stable
 %define		_pearname	Image_Color
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - Manage and handles color data and conversions
 Summary(pl.UTF-8):	%{_pearname} - obsługa konwersji i zarządzania kolorami
 Name:		php-pear-%{_pearname}
